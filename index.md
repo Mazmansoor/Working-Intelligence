@@ -4,13 +4,12 @@
 
 AI and entrepreneurship, practiced carefully.
 
-<nav>
 [Path](path.md) ·
 [Learn](learn/README.md) ·
 [Build](build/README.md) ·
 [Reflections](reflections/README.md) ·
+[Manifesto](manifesto.md) ·
 [About](about.md)
-</nav>
 
 ---
 
