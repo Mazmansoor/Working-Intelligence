@@ -94,4 +94,22 @@ blockquote {
   color: var(--muted);
   font-style: italic;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0f0f0f;
+    color: #eaeaea;
+  }
+
+  a {
+    color: #7aa2ff;
+  }
+
+  code {
+    background: #1e1e1e;
+  }
+
+  hr {
+    border-top-color: #333;
+  }
+}
 
