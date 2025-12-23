@@ -20,5 +20,6 @@ No hype.
 No hustle.  
 No shortcuts.
 
-→ [Start the Path](path.md)
+→ [Start the Path](path.html)
+
 
