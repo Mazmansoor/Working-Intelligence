@@ -1,12 +1,7 @@
 <link rel="stylesheet" href="style.css">
 <nav>
-[Working Intelligence](./) ·
-[Path](path.html) ·
-[Begin](beginner/) ·
-[Learn](learn/) ·
-[Build](build/) ·
-[Reflections](reflections/) ·
-[Manifesto](manifesto.html)
+→ [Start the Path](path.html)
+
 </nav>
 
 
