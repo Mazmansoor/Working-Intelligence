@@ -59,6 +59,7 @@ def get_template(title, content, current_page_path):
     nav_items = [
         ('/', 'Home'),
         ('/path/', 'The Path'),
+        ('/setup.html', 'Setup'),
         ('/beginner/', 'Beginner'),
         ('/learn/', 'Learn'),
         ('/build/', 'Build'),
@@ -209,7 +210,56 @@ pages.append({
         <p>It is <strong>not</strong> for those seeking quick hacks, certificates, or hype.</p>
 
         <br>
-        <a href="/beginner/" class="cta-button">Begin Part I</a>
+        <a href="/setup.html" class="cta-button">Get Set Up First</a>
+        <a href="/beginner/" class="cta-button" style="margin-left: 1rem; background: #fff; color: #000; border: 1px solid #ccc;">Then Begin Part I</a>
+    """
+})
+
+# --- Setup Guide ---
+pages.append({
+    'path': 'setup.html',
+    'title': 'Setting Up Your Environment',
+    'content': """
+        <h1>Setting Up Your Environment</h1>
+        <p class="intro">Before we build, we must prepare our tools.</p>
+
+        <p>To learn effectively, you must run code on your own machine. We need two things:</p>
+        <ol>
+            <li><strong>Python</strong>: The language interpreter.</li>
+            <li><strong>A Text Editor</strong>: A place to write your code.</li>
+        </ol>
+
+        <h2>1. Install Python</h2>
+
+        <h3>Windows</h3>
+        <p>Download the latest version from <a href="https://www.python.org/downloads/">python.org</a>. <br>
+        <strong>Important:</strong> During installation, check the box that says <em>"Add Python to PATH"</em>.</p>
+
+        <h3>macOS</h3>
+        <p>Macs come with Python, but it's often old. Download the latest version from <a href="https://www.python.org/downloads/">python.org</a>.</p>
+
+        <h3>Linux</h3>
+        <p>You likely already have it. Type <code>python3 --version</code> in your terminal.</p>
+
+        <h2>2. Choose a Text Editor</h2>
+        <p>Do not use Word or Notepad. You need a code editor.</p>
+
+        <ul>
+            <li><strong>VS Code</strong>: The industry standard. Powerful, free. <a href="https://code.visualstudio.com/">Download here</a>.</li>
+            <li><strong>Thonny</strong>: Great for absolute beginners. Simple, comes with Python built-in. <a href="https://thonny.org/">Download here</a>.</li>
+        </ul>
+
+        <h2>3. Verify Your Setup</h2>
+        <p>Open your terminal (Command Prompt on Windows) and type:</p>
+        <pre><code>python --version</code></pre>
+        <p>(or <code>python3 --version</code> on Mac/Linux)</p>
+        <p>If you see a number like <code>Python 3.x.x</code>, you are ready.</p>
+
+        <hr>
+        <div class="module-nav">
+            <a href="/path/">&larr; Back to Path</a>
+            <a href="/beginner/module-01.html">Start Module 1 &rarr;</a>
+        </div>
     """
 })
 
