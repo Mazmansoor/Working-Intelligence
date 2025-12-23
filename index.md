@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <nav>
   [Working Intelligence](/working-intelligence/) ·
   [Path](/working-intelligence/path.md) ·
