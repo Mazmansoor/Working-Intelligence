@@ -1,15 +1,12 @@
-<link rel="stylesheet" href="/working-intelligence/style.css">
-
-# Working Intelligence
-
-AI and entrepreneurship, practiced carefully.
-
-[Path](path.md) ·
-[Learn](learn/README.md) ·
-[Build](build/README.md) ·
-[Reflections](reflections/README.md) ·
-[Manifesto](manifesto.md) ·
-[About](about.md)
+<nav>
+  [Working Intelligence](/working-intelligence/) ·
+  [Path](/working-intelligence/path.md) ·
+  [Begin](/working-intelligence/beginner/) ·
+  [Learn](/working-intelligence/learn/) ·
+  [Build](/working-intelligence/build/) ·
+  [Reflections](/working-intelligence/reflections/) ·
+  [Manifesto](/working-intelligence/manifesto.md)
+</nav>
 
 ---
 

@@ -1,11 +1,12 @@
-<link rel="stylesheet" href="/working-intelligence/style.css">
+<nav>
+  [Working Intelligence](/working-intelligence/) ·
+  [Path](/working-intelligence/path.md) ·
+  [Begin](/working-intelligence/beginner/) ·
+  [Learn](/working-intelligence/learn/) ·
+  [Build](/working-intelligence/build/) ·
+  [Reflections](/working-intelligence/reflections/) ·
+  [Manifesto](/working-intelligence/manifesto.md)
+</nav>
 
-# Learn
-
-Foundations of intelligence and systems.
-
-- [How Intelligence Actually Works](01-intelligence.md)
-- [ML Without Illusions](02-ml-basics.md)
-- [Agents Are Not Employees](03-agents.md)
-- [Build Something That Matters](04-building.md)
+---
 
