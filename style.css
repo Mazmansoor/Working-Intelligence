@@ -1,4 +1,3 @@
-
 /* Working Intelligence — minimal, readable, durable */
 
 :root {
@@ -9,7 +8,7 @@
 }
 
 body {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   max-width: 720px;
   margin: 64px auto;
   padding: 0 20px;
@@ -19,41 +18,51 @@ body {
 }
 
 nav {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 nav a {
   color: var(--muted);
-  margin-right: 0.5rem;
+  text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
   color: var(--text);
+  text-decoration: underline;
 }
 
 h1 {
   font-size: 2.2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 1.4rem;
-  margin-top: 2.2rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
 }
 
 h3 {
-  font-size: 1.1rem;
-  margin-top: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
 }
 
 p {
-  margin: 1rem 0;
+  margin: 1.2rem 0;
 }
 
 a {
@@ -65,12 +74,13 @@ a:hover {
   text-decoration: underline;
 }
 
-ul {
-  margin: 1rem 0 1rem 1.2rem;
+ul, ol {
+  margin: 1rem 0 1rem 1.5rem;
 }
 
 li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.2rem;
 }
 
 hr {
@@ -80,36 +90,59 @@ hr {
 }
 
 code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.9em;
-  background: #f7f7f7;
+  background: #f4f4f4;
   padding: 0.2em 0.4em;
   border-radius: 4px;
 }
 
-blockquote {
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
   margin: 1.5rem 0;
-  padding-left: 1rem;
-  border-left: 3px solid var(--rule);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding-left: 1.2rem;
+  border-left: 4px solid var(--rule);
   color: var(--muted);
   font-style: italic;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #0f0f0f;
-    color: #eaeaea;
-  }
 
-  a {
-    color: #7aa2ff;
-  }
-
-  code {
-    background: #1e1e1e;
-  }
-
-  hr {
-    border-top-color: #333;
-  }
+.intro {
+  font-size: 1.2rem;
+  color: var(--muted);
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
+.cta-button {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  text-decoration: none;
+  background: #333;
+}
+
+.module-nav {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
