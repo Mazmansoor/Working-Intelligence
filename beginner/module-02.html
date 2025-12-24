@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 2: Your First Conversations with Python | Working Intelligence</title>
+    <title>Module 2 | Working Intelligence</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav>
         <a href="../index.html">Home</a>
 <a href="../path/index.html">The Path</a>
+<a href="../setup.html">Setup</a>
 <a href="./index.html" class="active">Beginner</a>
 <a href="../learn/index.html">Learn</a>
 <a href="../build/index.html">Build</a>
@@ -18,31 +19,47 @@
 
     </nav>
     <main>
-
         <h1>Module 2: Your First Conversations with Python</h1>
-
-        <h2>Running Python</h2>
-        <p>Python is a language we use to talk to the computer. We write text (code), and an interpreter reads it and performs actions.</p>
-
-        <h2>Printing</h2>
-        <p>The simplest action is to show something on the screen.</p>
-        <pre><code>print("Hello, world!")</code></pre>
-        <p>This is your first program.</p>
-
-        <h2>Comments</h2>
-        <p>Code is for humans to read, too. We use comments to leave notes.</p>
-        <pre><code># This is a comment. The computer ignores it.
-print("This runs.")</code></pre>
-
-        <h2>Reading Error Messages Calmly</h2>
-        <p>If you type <code>print("Hello"</code> (missing parenthesis), Python will complain. Read the message. It often points to the exact line where the confusion happened.</p>
-
-        <hr>
-        <div class="module-nav">
-            <a href="module-01.html">&larr; Previous</a>
-            <a href="module-03.html">Next: Module 3 &rarr;</a>
-        </div>
-
+<h2>1. The Python Interpreter</h2>
+<p>We will use the Python language. It is clean, readable, and powerful.</p>
+<p>When you installed Python, you installed an <strong>interpreter</strong>. This is a program that reads your text file and executes the commands inside it.</p>
+<h2>2. Hello, World!</h2>
+<p>The tradition for every programmer is to make the computer speak.</p>
+<p>Open your text editor. Create a new file named <code>hello.py</code>.</p>
+<p>Type this exactly:</p>
+<pre><code class="language-python">print("Hello, world!")
+</pre></code>
+<p>Save the file.</p>
+<p>Open your terminal. Navigate to the folder where you saved the file.</p>
+<p>Run it by typing:</p>
+<pre><code class="language-bash">python hello.py
+</pre></code>
+<p>(Or <code>python3 hello.py</code> on Mac/Linux).</p>
+<p><strong>What happened?</strong></p>
+<p>The computer printed <code>Hello, world!</code> to the screen.</p>
+<p>You just gave a command, and the machine obeyed.</p>
+<h2>3. Breaking It Down</h2>
+<ul>
+<li>  <code>print</code>: This is a <strong>function</strong>. A command built into Python.</li>
+<li>  <code>(...)</code>: Parentheses tell Python we are "calling" the function (using it).</li>
+<li>  <code>"Hello, world!"</code>: The text inside quotes is a <strong>string</strong>. It is the data we are passing to the function.</li>
+</ul>
+<h2>4. Common Mistakes</h2>
+<p>Try to break it on purpose. Change your file to this:</p>
+<pre><code class="language-python">print("Hello, world"
+</pre></code>
+<p>Run it. You will see:</p>
+<p><code>SyntaxError: unexpected EOF while parsing</code> (or similar).</p>
+<p>This means "End Of File" came too soon. You forgot the closing <code>)</code>.</p>
+<p>Fix it and run it again.</p>
+<h2>5. Comments</h2>
+<p>You can leave notes for yourself.</p>
+<pre><code class="language-python"># This is a comment. Python ignores it.
+print("This code runs.") # This is also a comment.
+# print("This code does NOT run because it is commented out.")
+</pre></code>
+<p>Use comments to explain <em>why</em> you did something, not <em>what</em> you did.</p>
+<hr><div class="module-nav"><a href="./index.html">Back to Index</a></div>
     </main>
 </body>
 </html>
